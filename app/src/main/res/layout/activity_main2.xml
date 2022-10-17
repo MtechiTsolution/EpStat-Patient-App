@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightWhite"
+    tools:context=".Neonatal.MainActivity2">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/patientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:padding="10dp"
+                android:text="Patient Name"
+                android:textAllCaps="true"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/patientName"
+                android:paddingLeft="10dp"
+                android:text="Patient"
+                android:textAllCaps="true"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+
+                <TextView
+                    android:id="@+id/basicInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Basic Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+               >
+                <TextView
+                    android:id="@+id/ViewPhoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/basicInfo"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Phone Number="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/ViewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewPhoneNum"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Address="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/ViewGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewAddress"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Gender="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/ViewAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewGender"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Age="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/ViewWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewAge"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Weight="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+
+                <TextView
+                    android:id="@+id/DateInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Date Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/ViewDateOfAddmission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DateInfo"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Date Of Addmission="
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/ViewTimeOfAdmission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewDateOfAddmission"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Time Of Addmission="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/ViewDischargeDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewTimeOfAdmission"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Discharge Date="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+
+                <TextView
+                    android:id="@+id/OtherInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Other Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/ViewCurrentStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/OtherInfo"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Current Status="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/ViewDiagonsis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewCurrentStatus"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Diagonsis="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/ViewGynaeUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewDiagonsis"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Gynae Unit="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/ViewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewGynaeUnit"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Status="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/ViewDurationOfStay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewStatus"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Duration of Stay="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/ViewGestationalAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewDurationOfStay"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Gestational Age="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/ViewWeightAccToGestationalAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewGestationalAge"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Weight According to Gestational Age="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/ViewMiscellaneous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ViewWeightAccToGestationalAge"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Miscellaneous="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="60dp"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+</RelativeLayout>

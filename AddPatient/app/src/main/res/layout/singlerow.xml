@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="9dp"
+    app:cardCornerRadius="9dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/circle_text"
+                android:layout_width="52dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="I"
+                android:textColor="#00a2b1"
+                android:textSize="18sp" />
+            />
+
+
+            <TextView
+                android:id="@+id/nametext"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/CurrentStatusText"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="96dp"/>
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/CurrentStatusText"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_view" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/PhoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0301-4449757"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/DateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dec 12,2020"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGray"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

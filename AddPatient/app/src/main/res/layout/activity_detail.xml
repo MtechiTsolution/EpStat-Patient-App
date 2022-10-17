@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightWhite"
+    tools:context=".Neonatal.DetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/patientName_NLV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:padding="10dp"
+                android:text="Patient Name"
+                android:textAllCaps="true"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/patientName_NLV"
+                android:paddingLeft="10dp"
+                android:text="Patient"
+                android:textAllCaps="true"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="134dp"
+                    android:layout_marginLeft="134dp"
+                    android:layout_toEndOf="@id/basicInfo"
+                    android:layout_toRightOf="@id/basicInfo"
+                    android:layout_marginTop="30dp"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_edit"
+                    android:onClick="edit"/>
+
+                <TextView
+                    android:id="@+id/basicInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Basic Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+
+                    <TextView
+                        android:id="@+id/MrNum_NLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/basicInfo"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingLeft="25dp"
+                        android:text="Mr Number="
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+
+
+                <TextView
+                    android:id="@+id/PhoneNum_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/MrNum_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Phone Number="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/Address_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PhoneNum_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Address="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/Gender_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Address_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Gender="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/Weight_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Gender_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Weight="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"/>
+
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="134dp"
+                    android:layout_marginLeft="134dp"
+                    android:layout_toEndOf="@id/DateInfo_NLV"
+                    android:layout_marginTop="30dp"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_edit"
+                    android:onClick="Neo_DateInfo"/>
+
+                <TextView
+                    android:id="@+id/DateInfo_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Date Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/DateOfAddmission_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DateInfo_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Date Of Addmission="
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/TimeOfAdmission_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DateOfAddmission_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Time Of Addmission="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/Age_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TimeOfAdmission_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Age="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/DischargeDate_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Age_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Discharge Date="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="134dp"
+                    android:layout_marginLeft="134dp"
+                    android:layout_toEndOf="@id/OtherInfo"
+                    android:layout_marginTop="30dp"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_edit"
+                    android:onClick="edit_OtherInfo"/>
+
+                <TextView
+                    android:id="@+id/OtherInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Other Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/CurrentStatus_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/OtherInfo"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Current Status="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/Diagonsis_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CurrentStatus_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Diagonsis="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/GynaeUnit_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Diagonsis_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Gynae Unit="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/Status_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/GynaeUnit_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Status="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/DurationOfStay_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Status_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Duration of Stay="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/GestationalAge_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DurationOfStay_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Gestational Age="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/WeightAccToGestationalAge_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/GestationalAge_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Weight According to Gestational Age="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/Miscellaneous_NLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/WeightAccToGestationalAge_NLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Miscellaneous="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="60dp"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+ <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete"
+            android:backgroundTint="@color/teal_200"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="deleteItem"
+            android:layout_margin="20dp"/>
+</RelativeLayout>
+
+
+
+

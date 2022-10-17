@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="Update Password"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+
+
+<!--EditText: Old Input Passward-->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:id="@+id/passwordTIL"
+        android:inputType="textPassword"
+
+
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Current Password"
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    EditTExt: new Input Password-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        android:id="@+id/cPasswardTIL"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edPassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="New Password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/edsubmit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Update Passward"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+</LinearLayout>

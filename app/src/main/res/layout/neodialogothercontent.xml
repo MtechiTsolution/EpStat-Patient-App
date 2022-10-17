@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update Content Panel"
+        android:background="@color/teal_200"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/enKEY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:text="Neonatel Medical Record Number = 1"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/encurrentStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/endiagonsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diagonsis"
+            android:inputType="text"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/engynae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gynae Unit"
+            android:inputType="textAutoCorrect|text"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Only For Nursary"
+            android:textSize="15sp"
+            android:layout_gravity="center" />
+        <RadioGroup
+            android:layout_marginLeft="15dp"
+            android:id="@+id/enstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/enib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="IB"
+                android:textSize="14sp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/enob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OB"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/enDurationOfStay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration of Stay in Nursery "
+            android:inputType="textAutoCorrect|number"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/engestationalAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gestational Age "
+            android:inputType="textAutoCorrect|number"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight according to Gestational Age"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            />
+        <RadioGroup
+            android:layout_marginLeft="15dp"
+            android:id="@+id/enweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ensmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Small"
+                android:textSize="14sp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:layout_marginRight="15dp"
+                android:id="@+id/enappropriate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appropriate"
+                android:textSize="14sp" />
+            <RadioButton
+                android:id="@+id/enlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enMiscellaneous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Miscellaneous"
+            android:inputType="text"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:id="@+id/ensubmit"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

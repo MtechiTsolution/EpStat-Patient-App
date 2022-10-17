@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightWhite"
+    tools:context=".Pedriatric.PedriatricSinglePatientView">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/PedpatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:padding="10dp"
+                android:text="Patient Name"
+                android:textAllCaps="true"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PedpatientName"
+                android:paddingLeft="10dp"
+                android:text="Patient"
+                android:textAllCaps="true"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+
+                <TextView
+                    android:id="@+id/PedbasicInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Basic Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+
+                <TextView
+                    android:id="@+id/PedViewPhoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedbasicInfo"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Phone Number="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/PedViewAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedViewPhoneNum"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Address="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/PedViewGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedViewAddress"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Gender="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/PedViewAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedViewGender"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Age="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/PedViewWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedViewAge"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Weight="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+
+                <TextView
+                    android:id="@+id/PedDateInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Date Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/PedViewDateOfAddmission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedDateInfo"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Date Of Addmission="
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/PedViewTimeOfAdmission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedViewDateOfAddmission"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Time Of Addmission="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/PedViewDischargeDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedViewTimeOfAdmission"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Discharge Date="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="20dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+
+                <TextView
+                    android:id="@+id/OtherInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Other Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/PedViewCurrentStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/OtherInfo"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Current Status="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/PedViewDiagonsis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedViewCurrentStatus"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Diagonsis="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:id="@+id/PedViewMiscellaneous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PedViewDiagonsis"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Miscellaneous="
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="60dp"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

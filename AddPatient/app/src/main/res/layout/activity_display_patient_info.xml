@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightWhite"
+    tools:context=".Pedriatric.DisplayPatientInfo">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/patientName_PLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="10dp"
+                    android:text="Patient Name"
+                    android:textAllCaps="true"
+                    android:textSize="25sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/patientName_PLV"
+                    android:paddingLeft="10dp"
+                    android:text="Patient"
+                    android:textAllCaps="true"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:elevation="@dimen/cardview_compat_inset_shadow">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="134dp"
+                    android:layout_marginLeft="134dp"
+                    android:layout_toEndOf="@id/basicInfo_PLV"
+                    android:layout_toRightOf="@id/basicInfo_PLV"
+                    android:layout_marginTop="30dp"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_edit"
+                    android:onClick="edit"/>
+
+                <TextView
+                    android:id="@+id/basicInfo_PLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:padding="25dp"
+                    android:text="Basic Info"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+
+                <TextView
+                    android:id="@+id/MrNum_PLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/basicInfo_PLV"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Mr Number="
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/PhoneNum_PLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/MrNum_PLV"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Phone Number="
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Address_PLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/PhoneNum_PLV"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Address="
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Gender_PLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Address_PLV"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:text="Gender="
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Weight_PLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Gender_PLV"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:paddingLeft="25dp"
+                    android:paddingBottom="20dp"
+                    android:text="Weight="
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_bg"
+                    android:elevation="@dimen/cardview_compat_inset_shadow">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="134dp"
+                        android:layout_marginLeft="134dp"
+                        android:layout_toEndOf="@id/DateInfo_PLV"
+                        android:layout_marginTop="30dp"
+                        android:background="#00000000"
+                        android:src="@drawable/ic_edit"
+                        android:onClick="edit_DateInfo"/>
+
+                    <TextView
+                        android:id="@+id/DateInfo_PLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:padding="25dp"
+                        android:text="Date Info"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/DateOfAddmission_PLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DateInfo_PLV"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingLeft="25dp"
+                        android:text="Date Of Addmission="
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/TimeOfAdmission_PLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/DateOfAddmission_PLV"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingLeft="25dp"
+                        android:text="Time Of Addmission="
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Age_PLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/TimeOfAdmission_PLV"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingLeft="25dp"
+                        android:text="Age="
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/DischargeDate_PLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Age_PLV"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingLeft="25dp"
+                        android:paddingBottom="20dp"
+                        android:text="Discharge Date="
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/btn_bg"
+                    android:elevation="@dimen/cardview_compat_inset_shadow">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="134dp"
+                        android:layout_marginLeft="134dp"
+                        android:layout_toEndOf="@id/OtherInfo"
+                        android:layout_marginTop="30dp"
+                        android:background="#00000000"
+                        android:src="@drawable/ic_edit"
+                        android:onClick="edit_OtherInfo"/>
+
+
+                    <TextView
+                        android:id="@+id/OtherInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:padding="25dp"
+                        android:text="Other Info"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/CurrentStatus_PLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/OtherInfo"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingLeft="25dp"
+                        android:text="Current Status="
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Diagonsis_PLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/CurrentStatus_PLV"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingLeft="25dp"
+                        android:text="Diagonsis="
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Miscellaneous_PLV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Diagonsis_PLV"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:paddingLeft="25dp"
+                        android:paddingBottom="60dp"
+                        android:text="Miscellaneous="
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:onClick="deleteItem"
+        android:src="@drawable/ic_baseline_delete" />
+
+
+</RelativeLayout>
+
+
+
+

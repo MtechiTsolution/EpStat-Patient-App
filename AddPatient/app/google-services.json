@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "851456141591",
+    "firebase_url": "https://addpatient-eb89e.firebaseio.com",
+    "project_id": "addpatient-eb89e",
+    "storage_bucket": "addpatient-eb89e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851456141591:android:2a8d3e4d15d886f9b62f52",
+        "android_client_info": {
+          "package_name": "com.example.addpatient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851456141591-e9egprmj0mdqqfhhjge92n3rc7giimji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiVamclOz3JsGMfSh3P_X508y0zEyppwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851456141591-e9egprmj0mdqqfhhjge92n3rc7giimji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

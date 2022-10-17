@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.addpatient">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AddPatient">
+        <activity android:name=".Admin.AdminMainActivity"></activity>
+        <activity android:name=".Admin.DoctorSingleRecord" />
+        <activity android:name=".Admin.DoctorList" />
+        <activity android:name=".EmailVerification" />
+        <activity android:name=".Admin.AdminSingleRecord" />
+        <activity android:name=".Admin.AdminList" />
+        <activity android:name=".Admin.CreateNewAdmin" />
+        <activity android:name=".Admin.DoctorRequest" />
+        <activity android:name=".Admin.AdminEditProfile" />
+        <activity android:name=".Admin.AdminProfile" />
+        <activity android:name=".Admin.AdminDashboard" />
+        <activity android:name=".Admin.AdminSignIn" />
+        <activity android:name=".Choose" />
+        <activity android:name=".EditPofile" />
+        <activity android:name=".Profile" />
+        <activity android:name=".DoctorDashboard" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateAccount" />
+        <activity android:name=".DoctorSignIn" />
+        <activity android:name=".Neonatal.DetailActivity" />
+        <activity android:name=".Neonatal.NeonatalActivity" />
+        <activity android:name=".Neonatal.NeonatalPatientList" />
+        <activity android:name=".Pedriatric.DisplayPatientInfo" />
+        <activity android:name=".Pedriatric.PedriatricPatientList" />
+        <activity android:name=".Pedriatric.PedriatricActivity" />
+        <activity android:name=".Pedriatric.PedriatricSinglePatientView" />
+        <activity android:name=".Pedriatric.PedriatricAddPatient" />
+        <activity android:name=".Neonatal.MainActivity2" />
+        <activity android:name=".Neonatal.MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>
